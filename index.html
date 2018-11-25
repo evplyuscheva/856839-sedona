@@ -26,6 +26,7 @@
     <section class="features">
       <h2 class="features-main">Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
       <p class="features-reasons">Рассмотрим 5 причин, по которым Седона курче чем Гранд Каньон!</p>
+      <h2 class="visially-hidden"> 5 причин посетить Седону </h2>
       <ul class="features-list">
         <li>
           <img class="main-picture-feature" src="img/main-reason1.jpg" width="800px" height="256px" alt="Фотография-причина1">
@@ -73,42 +74,50 @@
     <section class="offers">
       <strong class="main-question">Заинтересовались?</strong>
       <p class="main-offer">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <a class="main-search" href="#">Поиск гостиницы в Седоне</a>
-      <img class="main-calendar" src="img/main-calendar.svg" width="21" height="22" alt="Иконка-календарь">
-      <img class="main-calendar" src="img/main-calendar.svg" width="21" height="22" alt="Иконка-календарь">
-      <!--
-          <form>
-            <p class="main-button-date">Дата заезда<input type="date" name="date-from"></p>
-          </form>
-          <form>
-            <p class="main-button-date">Дата выезда<input type="date" name="date-to"></p>
-          </form>
-          <form>
-            <p class="main-button-adults">Взрослые<input type="number" name="number-adults" min="1" max="10" value="1"></p>
-          </form>
-          <form>
-            <p class="main-button-childrens">Дети<input type="number" name="number-childrens" min="0" max="10" value="0"></p>
-          </form>
-          <form action="#">
-            <p class="main-button-search"><input type="submit" value="Найти"></p>
-          </form>
--->
+      <button class="main-search">Поиск гостиницы в Седоне</button>
+      <form class="search-form" action="catalog.html" method="post">
+         <p class="search-criteria">
+           <label for="search-datefrom">Дата заезда</label>
+           <input id="search-datefrom" type="date" name="datefrom" value="">
+           <img class="main-calendar" src="img/main-calendar.svg" width="21" height="22" alt="Иконка-календарь">
+         </p>
+         <p class="search-criteria">
+           <label for="seacrh-dateto">Дата выезда</label>
+           <input id="search-dateto" type="date" name="dateto" value="">
+           <img class="main-calendar" src="img/main-calendar.svg" width="21" height="22" alt="Иконка-календарь">
+         </p>
+         <p class="search-criteria">
+           <label for="search-adults">Взрослые</label>
+           <input id="search-adults" type="number" name="adults" value="" placeholder="1" min="1">
+         </p>
+         <p class="search-criteria">
+           <label for="search-children">Дети</label>
+           <input id="search-children" type="number" name="children" value="" placeholder="0">
+         </p>
+         <a href="catalog.html">Найти</a> <!--Сделала ссылкой, так как переходим на другую страницу -->
+       </form>
     </section>
+    <h2 class="visially-hidden"> Карта Седоны </h2>
+    <img class="main-map" src="img/main-map.jpg" alt="Карта Седоны" width=100%>
   </main>
   <footer class="main-footer">
     <p class="hashtag-footer">#VISITSEDONA</p>
     <div class="social-footer">
       <ul>
-        <li><a class="social-button" href="#">Twitter</a></li>
-        <li><a class="social-button" href="#">Facebook</a></li>
-        <li><a class="social-button" href="#">Youtube</a></li>
+        <li>
+          <a class="social-button" href="#" aria-label="Ссылка на Твиттер">Twitter</a>
+        </li>
+        <li>
+          <a class="social-button" href="#" aria-label="Ссылка на Фейсбук">Facebook</a>
+        </li>
+        <li>
+          <a class="social-button" href="#" aria-label="Ссылка на Ютуб">Youtube</a>
+        </li>
       </ul>
     </div>
     <p class="copyright-footer">
       <b>Разработано:</b>
-      <a class="button-footer" href="https://htmlacademy.ru"><img src="img/logo-academy.svg" width="115px" height="41px" alt="Html Academy"></a>
-    </p>
+      <a class="button-footer" href="https://htmlacademy.ru" aria-label="Ссылка на Академию"><img src="img/logo-academy.svg" width="115px" height="41px" alt="Html Academy"></a>
   </footer>
 </body>
-
 </html>

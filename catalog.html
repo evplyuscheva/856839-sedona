@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
         <nav class="nav-header">
-          <a class="nav-header-logo" href="index.html">
+          <a class="nav-header-logo" href="index.html" aria-label="Логотип и Ссылка на главную страницу">
            <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седона">
           </a>
           <ul>
@@ -20,7 +20,11 @@
     </header>
     <main class="main-container">
       <!--  <img class="catalog-background" src="img/catalog-background.jpg" width="1200px" height="562px" alt="Обои"> -->
+        <section class="criteria">
+          <h2 class="visially-hidden"> Критерии для поиска </h2>
+        </section>
         <section class="main-hotel">
+          <h2 class="visially-hidden">Подходящие по критериям поиска отели</h2>
           <ul class="hotel-list">
             <li><h2 class="hotel-name">Amara resort & Spa</h2>
               <p class="hotel-type"> Гостиница</p>
@@ -28,8 +32,8 @@
               <p class="hotel-rating">Рейтинг:8,5</p>
               <p class="hidden-text">Количество звезд</p>
               <img class="catalog-photo" src="img/catalog-amara.jpg" width="135px" height="90px" alt="Amara Resort">
-              <p class="main-button-about"><a href="#">Подробнее</a></p>
-              <p class="main-button-reserve"><a href="#">Забронировать</a></p>
+              <a class="main-button-about"><a href="#">Подробнее</a></p><!--Сделала ссылкой, так как переходим на другую страницу -->
+              <p class="main-button-reserve"><a href="#">Забронировать</a></p><!--Сделала ссылкой, так как переходим на другую страницу -->
             </li>
             <li><h2 class="hotel-name">Desert Quail Inn</h2>
               <p class="hotel-type">Мотель</p>
@@ -56,14 +60,20 @@
             <p class="hashtag-footer">#VISITSEDONA</p>
             <div class="social-footer">
               <ul>
-                <li><a class="social-button" href="#">Twitter</a></li>
-                <li><a class="social-button" href="#">Facebook</a></li>
-                <li><a class="social-button" href="#">Youtube</a></li>
+                <li>
+                  <a class="social-button" href="#" aria-label="Ссылка на Твиттер">Twitter</a>
+                </li>
+                <li>
+                  <a class="social-button" href="#" aria-label="Ссылка на Фейсбук">Facebook</a>
+                </li>
+                <li>
+                  <a class="social-button" href="#" aria-label="Ссылка на Ютуб">Youtube</a>
+                </li>
               </ul>
             </div>
             <p class="copyright-footer">
               <b>Разработано:</b>
-              <a class="button-footer" href="https://htmlacademy.ru"><img src="img/logo-academy.svg" width="115px" height="41px" alt="Html Academy"></a>
+              <a class="button-footer" href="https://htmlacademy.ru" aria-label="Ссылка на Академию"><img src="img/logo-academy.svg" width="115px" height="41px" alt="Html Academy"></a>
             </p>
         </footer>
   </body>
