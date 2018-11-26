@@ -79,22 +79,24 @@
          <p class="search-criteria">
            <label for="search-datefrom">Дата заезда</label>
            <input id="search-datefrom" type="date" name="datefrom" value="">
+           <button class="search-calendar" type="submit" aria-label="Открыть календарь для выбора даты">Календарь</button>
          </p>
          <p class="search-criteria">
            <label for="seacrh-dateto">Дата выезда</label>
            <input id="search-dateto" type="date" name="dateto" value="">
+           <button class="search-calendar" type="submit" aria-label="Открыть календарь для выбора даты">Календарь</button>
          </p>
          <p class="search-criteria">
            <label for="search-adults">Взрослые</label>
-           <button class="search-minus" type="submit">-</button>
+           <button class="search-minus" type="submit" aria-label="Убрать взрослого">-</button>
            <input id="search-adults" type="number" name="adults" value="" placeholder="1" min="1">
-           <button class="search-plus" type="submit">+</button>
+           <button class="search-plus" type="submit" aria-label="Добавить еще одного взрослого">+</button>
          </p>
          <p class="search-criteria">
            <label for="search-children">Дети</label>
-           <button class="search-minus" type="submit">-</button>
+           <button class="search-minus" type="submit" aria-label="Убрать взрослого">-</button>
            <input id="search-children" type="number" name="children" value="" placeholder="0">
-           <button class="search-plus" type="submit">+</button>
+           <button class="search-plus" type="submit" aria-label="Добавить еще одного взрослого">+</button>
          </p>
          <button class="main-buttonsearch" type="submit">Найти</button>
        </form>
