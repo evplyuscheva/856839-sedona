@@ -40,15 +40,15 @@
           <ul>
             <li class="features-list-extra">
               <h4 class="features-name">Жилье</h4>
-              <p class="features-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <p class="features-description-gray">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
             <li class="features-list-extra">
               <h4 class="features-name">Еда</h4>
-              <p class="features-description">Всегда заказывай фирменный бургер, вы не разочаруетесь!</p>
+              <p class="features-description-gray">Всегда заказывай фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="features-list-extra">
               <h4 class="features-name">Сувениры</h4>
-              <p class="features-description">Не только китайского, но и местного производства!</p>
+              <p class="features-description-gray">Не только китайского, но и местного производства!</p>
             </li>
           </ul>
         </li>
@@ -63,17 +63,17 @@
         <li class="features-list-wide">
           <h3 class="features-name">Небольшая площадь</h3>
           <p class="features-number"> - №3 - </p>
-          <p class="features-description>">Все достопримечательности находятся очень близко</p>
+          <p class="features-description-gray>">Все достопримечательности находятся очень близко</p>
         </li>
         <li class="features-list-wide">
           <h3 class="features-name">Красивая дорога</h3>
           <p class="features-number"> - №4 - </p>
-          <p class="features-description>">Ехать в седону из лас-вегаса совсем не скучно!</p>
+          <p class="features-description-gray>">Ехать в седону из лас-вегаса совсем не скучно!</p>
         </li>
         <li class="features-list-wide">
           <h3 class="features-name">Мало туристов</h3>
           <p class="features-number"> - №5 - </p>
-          <p class="features-description>">Большинство едет в Гранд Каньон и толпится там</p>
+          <p class="features-description-gray>">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
       </div>
       </ul>
@@ -85,25 +85,25 @@
       <form class="search-form" action="catalog.html" method="post">
          <p class="search-criteria">
            <label for="search-datefrom">Дата заезда</label>
-           <input id="search-datefrom" type="date" name="datefrom" value="">
+           <input id="search-datefrom" type="date" name="datefrom" value="" class="forms">
            <button class="search-calendar" type="submit" aria-label="Открыть календарь для выбора даты">Календарь</button>
          </p>
          <p class="search-criteria">
            <label for="seacrh-dateto">Дата выезда</label>
-           <input id="search-dateto" type="date" name="dateto" value="">
+           <input id="search-dateto" type="date" name="dateto" value="" class="forms">
            <button class="search-calendar" type="submit" aria-label="Открыть календарь для выбора даты">Календарь</button>
          </p>
          <p class="search-criteria">
            <label for="search-adults">Взрослые</label>
-           <button class="search-minus" type="submit" aria-label="Убрать взрослого">-</button>
-           <input id="search-adults" type="number" name="adults" value="" placeholder="1" min="1">
-           <button class="search-plus" type="submit" aria-label="Добавить еще одного взрослого">+</button>
+           <button class="search-sign" type="submit" aria-label="Убрать взрослого">-</button>
+           <input id="search-adults" type="number" name="adults" value="" placeholder="1" min="1" class="forms">
+           <button class="search-sign" type="submit" aria-label="Добавить еще одного взрослого">+</button>
          </p>
          <p class="search-criteria">
            <label for="search-children">Дети</label>
-           <button class="search-minus" type="submit" aria-label="Убрать взрослого">-</button>
-           <input id="search-children" type="number" name="children" value="" placeholder="0">
-           <button class="search-plus" type="submit" aria-label="Добавить еще одного взрослого">+</button>
+           <button class="search-sign" type="submit" aria-label="Убрать взрослого">-</button>
+           <input id="search-children" type="number" name="children" value="" placeholder="0" class="forms">
+           <button class="search-sign" type="submit" aria-label="Добавить еще одного взрослого">+</button>
          </p>
          <button class="main-buttonsearch" type="submit">Найти</button>
        </form>

@@ -5,8 +5,9 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size:14px;
   font-weight: bold;
-  color: #282828;
+  color: #000000;
   text-transform: uppercase;
+  line-height: 26px;
 
   background-color: #f2f2f2;
 }
@@ -14,7 +15,19 @@ a {
   text-decoration: none;
 }
 .visially-hidden {
-  color: rgba(255,255,255,0);
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 header {
   background-color: #ffffff;
@@ -28,7 +41,7 @@ header {
 .nav-header a:hover {
   color: #81b3d2;
 }
-.nav-header a:focus {
+.nav-header a:active {
   color: rgba(0,0,0,0.5);
 }
 .features {
@@ -40,10 +53,20 @@ header {
 }
 .features-reasons {
   text-align: center;
+
+  color: #333333;
 }
 .features-list,
 .features-list-extra {
+  line-height: 21px;
+
   list-style: none;
+}
+.features-name {
+  font-size:21px;
+}
+.features-description-gray {
+  color: #333333;
 }
 .white-block {
   color: #ffffff;
@@ -59,12 +82,18 @@ header {
 }
 .main-question {
     font-size:30px;
+    line-height:36px;
 }
 .main-offer {
   font-weight:400;
+  line-height:24px;
+
+  color: #333333;
 }
 .main-search {
   font-size:21px;
+  text-transform: uppercase;
+  font-weight: bold;
 
   color: #ffffff;
   background-color: #766357;
@@ -72,26 +101,17 @@ header {
 .main-search:hover {
   background-color: #604e43;
 }
-.main-search:focus {
+.main-search:active {
   background-color: #503e33;
   color: rgba(255,255,255,0.3);
 }
-#search-datefrom,
-#search-dateto,
-#search-adults,
-#search-children {
+.forms {
   background-color: #f2f2f2;
 }
-#search-datefrom:hover,
-#search-dateto:hover,
-#search-adults:hover,
-#search-children:hover {
+.forms:hover{
   background-color: #ebebeb;
 }
-#search-datefrom:focus,
-#search-dateto:focus,
-#search-adults:focus,
-#search-children:focus {
+.forms:focus {
   background-color: #ffffff;
 }
 .search-calendar {
@@ -100,24 +120,23 @@ header {
 .search-calendar:hover {
   color: #282828;
 }
-.search-calendar:focus {
+.search-calendar:active {
   color: #81b3d2;
   background-color: #ffffff;
 }
-.search-minus,
-.search-plus {
+.search-sign {
   color: #a9a9a9;
 }
-.search-minus:hover,
-.search-plus:hover {
+.search-sign:hover {
   color: #000000;
 }
-.search-minus:focus,
-.search-plus:focus {
+.search-sign:active {
   color: #81b3d2;
 }
 .main-buttonsearch {
   font-size:21px;
+  text-transform: uppercase;
+  font-weight: bold;
 
   color: #ffffff;
   background-color: #81b3d2;
@@ -125,7 +144,7 @@ header {
 .main-buttonsearch:hover {
   background-color:#669ec0;
 }
-.main-buttonsearch:focus {
+.main-buttonsearch:active {
   background-color:#5496bd;
   color: rgba(255,255,255,0.3);
 }
@@ -145,7 +164,7 @@ header {
 .social-button:hover {
   background-color:#669ec0;
 }
-.social-button:focus {
+.social-button:active {
   background-color:#5496bd;
 }
 .copyright-footer b{
@@ -157,7 +176,7 @@ header {
 .button-footer:hover {
   color:#81b3d2;
 }
-.button-footer:focus {
+.button-footer:active {
   color:#bdbbbc;
 }
 
@@ -168,19 +187,32 @@ header {
 .hotel-list {
   list-style:none;
 }
+.hotel-name {
+  font-size:21px;
+}
+.hotel-name a:hover {
+  color: #81b3d2;
+}
+.hotel-name a:active {
+  color: rgba(0,0,0,0.5);
+}
 .hotel-type,
 .hotel-price {
   font-weight:400;
+  line-height: 21px;
 
   color:#333333;
 }
 .hotel-rating {
   font-weight:400;
+  line-height: 21px;
 
   background-color:#f2f2f2;
   color:#666666;
 }
 .main-button-about a {
+  line-height: 21px;
+
   background-color:#81b3d2;
   color:#ffffff;
 }
@@ -188,11 +220,13 @@ header {
   background-color:#669ec0;
   color:#ffffff;
 }
-.main-button-about a:focus {
+.main-button-about a:active {
   background-color:#5496bd;
   color: rgba(255,255,255,0.5);
 }
 .main-button-reserve a {
+  line-height: 21px;
+
   background-color:#766357;
   color:#ffffff;
 }
@@ -200,7 +234,7 @@ header {
   background-color:#604e43;
   color:#ffffff;
 }
-.main-button-reserve a:focus {
+.main-button-reserve a:active {
   background-color:#503e33;
   color: rgba(255,255,255,0.5);
 }
