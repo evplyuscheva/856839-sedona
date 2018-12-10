@@ -8,8 +8,6 @@ body {
   color: #000000;
   text-transform: uppercase;
   line-height: 26px;
-
-  background-color: #f2f2f2;
 }
 a {
   text-decoration: none;
@@ -30,10 +28,13 @@ a {
     overflow: hidden;
 }
 header {
-  background-color: #ffffff;
+/*  background-color: #ffffff; */
 }
 .nav-header ul{
+  margin:0;
+  padding: 0;
   list-style: none;
+
 }
 .nav-header a {
   color: #282828;
@@ -180,7 +181,7 @@ header {
   color:#bdbbbc;
 }
 
-/* Каталог */
+/* Каталог *//*
 .main-container {
   background-color:#fefefe;
 }
@@ -237,4 +238,108 @@ header {
 .main-button-reserve a:active {
   background-color:#503e33;
   color: rgba(255,255,255,0.5);
+} */
+body {
+  /* Временно для сетки */
+
+}
+nav {
+  display:flex;
+  flex-direction: row;
+  margin: 0 43px;
+  height:56px;
+  width:1200px;
+}
+.nav-header li{
+ width:240px;
+ display: inline-block;
+ vertical-align: top;
+ box-sizing: border-box;
+ text-align: center;
+ padding-top: 14px;
+ padding-bottom: 10px;
+ width: 240px;
+}
+ .nav-header-logo {
+  width:140px;
+  height: 70px;
+  position: absolute;
+  left: 50%;
+  margin-left: -69px;
+}
+nav li:nth-child(1) {
+    padding-left: 100px; /*значения пока подбирала ориентировочные, так как не получилось просчитать в ФШ */
+   text-align: left;
+}
+
+nav li:nth-child(2) {
+    margin-right: 300px;
+    text-align: center;
+}
+nav li:nth-child(3) {
+    margin-left: 300px;
+    text-align: center;
+}
+nav li:nth-child(4) {
+    padding-right: 100px;
+    text-align: right;
+}
+.main-container {
+  height:2586px;
+}
+.main-background {
+  width:1350px;
+  height:600px;
+  margin-left:45px;
+}
+.main-welcometext {
+  position: absolute;
+  top:159px;
+  left:500px;
+}
+.features-text {
+  padding: 30px;
+  text-align: center;
+}
+
+.features-main h2 {
+    margin: 0;
+    padding: 0 300px
+}
+
+.features-reasons p {
+    margin-bottom: 0;
+    margin-top: 30px
+}
+.offers {
+    text-align: center;
+    width: 1200px;
+    padding: 57px 72px 0px 72px
+}
+.main-question {
+   margin-top: 0px;
+   margin-bottom: 28px;
+}
+.main-offer p {
+  margin: 0;
+  margin-bottom: 48px;
+  padding: 0 300px
+}
+.search-criteria:nth-child(1),
+.search-criteria:nth-child(2)
+.search-criteria:nth-child(3),
+.search-criteria:nth-child(4)  {
+  margin-bottom:30px;
+}
+.main-footer {
+  display:flex;
+  flex-direction: row;
+  border: 5px solid black;
+  margin: 80px;
+}
+.hashtag-footer {
+  text-align:left;
+}
+.copyright-footer {
+  text-align: right;
 }
